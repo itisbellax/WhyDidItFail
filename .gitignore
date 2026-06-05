@@ -33,9 +33,17 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# runtime data — personal print snapshots and uploaded photos
+src/data/failures/
+public/snapshots/
+
+# logs
+/tmp/whydiditfail.log
+
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.claude/

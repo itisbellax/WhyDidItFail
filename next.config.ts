@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // serialport uses native Node.js bindings — must not be bundled by Turbopack
+  serverExternalPackages: ['serialport', '@serialport/bindings-cpp'],
 };
 
 export default nextConfig;
