@@ -1,6 +1,6 @@
 # WhyDidItFail
 
-A real-time 3D print failure monitor and diagnosis tool for the Prusa MK3S+. Connects directly to your printer via USB serial, detects failures automatically, and uses AI to diagnose what went wrong — including visual analysis from photos you upload.
+A real-time failure monitoring and diagnosis tool for Prusa MK3 / MK3+. Streams live printer data over USB serial, automatically detects firmware errors, and triggers AI-powered diagnosis. Users can also manually report issues mid-print — selecting the failure type, filling in print context, and optionally uploading a photo for visual analysis by Claude's vision model alongside the serial logs.
 
 ## Features
 
