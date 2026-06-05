@@ -126,3 +126,5 @@ Logs are written to `/tmp/whydiditfail.log`.
 | `SUPABASE_ANON_KEY` | Yes | Supabase anon key |
 | `SERIAL_PORT` | No | USB serial port path — omit to use mock mode |
 | `SERIAL_BAUD` | No | Baud rate, defaults to 115200 |
+
+**Why two API keys?** The two keys serve different purposes. `ANTHROPIC_API_KEY` powers Claude Haiku for all language tasks — diagnosis reasoning, vision analysis, and chat. `OPENAI_API_KEY` is used solely for generating vector embeddings (`text-embedding-3-small`) to search the print knowledge base in Supabase. Anthropic does not currently offer an embeddings API, so OpenAI handles that one step. Embedding costs are minimal (fractions of a cent per query).
